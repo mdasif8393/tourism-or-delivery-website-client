@@ -1,0 +1,11 @@
+.tours-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+}
+
+.tour-image{
+    height: 250px;
+    width: 350px;
+    border-radius: 5px;
+}

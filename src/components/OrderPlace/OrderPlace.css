@@ -1,0 +1,16 @@
+.orderPlace-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.orderPlace-container img{
+    border-radius: 5px;
+}
+.placeOrder-form-container{
+    margin-left: 5rem;
+    height: 550px;
+    width: 500px;
+    background-color: rgb(231, 231, 231);
+    border:  1px solid gray;
+    border-radius: 5px;
+}
