@@ -23,9 +23,9 @@ const Login = () => {
 
     return (
         
-        <div>
-            <div className="text-center mt-5">
-            <button className="btn btn-warning"onClick={handleGoogleLogin}>Google sign in</button>
+        <div className="mt-5 mb-5">
+            <div className="google-login-container container bg-light d-flex align-items-center justify-content-center">
+            <button className="google-login-button"onClick={handleGoogleLogin}><i class="fab fa-google fa-lg"></i> Google sign in</button>
         </div>
         </div>
     );

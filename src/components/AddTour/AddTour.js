@@ -16,11 +16,11 @@ const AddTour = () => {
     };
 
     return (
-        <div className="d-flex justify-content-center align-items-center mt-5">
-            <div className="add-tour-container">
+        <div className="d-flex justify-content-center align-items-center mt-5 mb-5">
+            <div className="add-tour-container bg-light">
                 
             <form className="m-5" onSubmit={handleSubmit(onSubmit)}>
-                <h4 className="text-center text-secondary">Add a new Tour</h4>
+                <h3 className="text-center text-secondary">Add a new tour details</h3>
 
                 <input className="form-control text-center" placeholder="Tour Title" {...register("title", { required: true })} /> <br/>
 

@@ -1,11 +1,28 @@
 .tours-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5rem;
+    grid-gap: 4rem;
 }
 
 .tour-image{
     height: 250px;
-    width: 350px;
+    width: 100%;
     border-radius: 5px;
+    transition: width .5s, height .5s;
+}
+.tour-card{
+    height: 460px;
+}
+
+@media only screen and (max-width: 700px) {
+    .tours-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+  }
+
+  .tour-image:hover{
+    height: 260px;
+    width: 100%;
 }

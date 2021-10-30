@@ -15,6 +15,8 @@ import Login from './components/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './components/Login/Login/PrivateRoute/PrivateRoute';
 import MyOrders from './components/MyOrders/MyOrders';
+import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -44,6 +46,10 @@ function App() {
           <MyOrders></MyOrders>
         </PrivateRoute>
 
+        <PrivateRoute path="/manageAllOrders">
+          <ManageAllOrders></ManageAllOrders>
+        </PrivateRoute>
+
         <Route path="/login">
           <Login></Login>
         </Route>
@@ -54,6 +60,7 @@ function App() {
 
       </Switch>
 
+      <Footer></Footer>
     </Router>
     </AuthProvider>
     

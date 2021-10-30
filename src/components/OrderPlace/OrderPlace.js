@@ -27,6 +27,7 @@ const OrderPlace = () => {
         data.place = tour.title; 
         data.date = startDate;
         data.image = tour.image;
+        data.status = 'pending';
         
         axios.post('http://localhost:5000/orders', data)
         .then(result => {
@@ -38,21 +39,21 @@ const OrderPlace = () => {
     };
     return (
         <div className="container orderPlace-container mt-5">
-            <div>
+            <div className="bg-light p-4 rounder">
                 <img className="img-fluid" src={tour.image}></img>
-                <h1>{tour.title}</h1>
-                <p>{tour.location}</p>
+                <h1 className="text-secondary">{tour.title}</h1>
+                <h6 className="mt-5"><i className="fas fa-map-marker-alt fa-lg"></i> {tour.location}</h6>
                 <p>{tour.description}</p>
-                <h5>{tour.duration} days</h5>
-                <h5>{tour.cost} taka all included</h5>
+                <h6 className="mt-5"><i className="far fa-calendar-check fa-lg"></i> {tour.duration} days</h6>
+                <h6><i class="fas fa-dollar-sign fa-lg"> </i> {tour.cost} taka all included</h6>
             </div>
 
             <div>
             <div className="d-flex justify-content-center align-items-center">
-                <div className="placeOrder-form-container p-3">
+                <div className="placeOrder-form-container bg-light p-3">
                     
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <h5 className="text-center text-secondary mb-5">Confirm order to explore {tour.title}</h5>
+                        <h4 className="text-center text-secondary mb-5">Confirm order to explore {tour.title}</h4>
 
                         <input className="form-control text-center" defaultValue={user.displayName} placeholder="Your Name" {...register("name", { required: true })} /> <br/>
 

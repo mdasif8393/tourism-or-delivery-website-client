@@ -1,0 +1,12 @@
+.google-login-container{
+    height: 500px;
+    width: 500px;
+}
+.google-login-button{
+    height: 50px;
+    width: 300px;
+    border: none;
+    background-color: #db3236;
+    color: white;
+    border-radius: 15px;
+}
