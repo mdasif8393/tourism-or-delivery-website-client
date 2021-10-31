@@ -6,12 +6,13 @@ import './OrderPlace.css'
 import { useForm } from "react-hook-form";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useHistory } from 'react-router-dom';
 
 const OrderPlace = () => {
     const {id} = useParams();
     const [tour, setTour] = useState({})
     const {user} = useAuth();
-    console.log(tour);
+    const history = useHistory();
         
     useEffect(()=> {
         axios.get(`http://localhost:5000/tours/${id}`)
@@ -34,11 +35,12 @@ const OrderPlace = () => {
             if(result.data.acknowledged){
                 alert("Confirm Order Successfully");
                 reset();
+                history.push('/myOrders')
             }
         })
     };
     return (
-        <div className="container orderPlace-container mt-5">
+        <div className="container orderPlace-container mt-5 mb-5">
             <div className="bg-light p-4 rounder">
                 <img className="img-fluid" src={tour.image}></img>
                 <h1 className="text-secondary">{tour.title}</h1>

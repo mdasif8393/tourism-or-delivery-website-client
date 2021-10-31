@@ -7,15 +7,20 @@ const MyOrder = (props) => {
     const {address, date, email, name, number, place, _id, image, status} = props.order;
 
     const handleDeleteUser = (id) => {
-        const proceed = window.confirm("Are you sure you want to delete?")
-        if(proceed){
-            axios.delete(`http://localhost:5000/orders/${id}`)
-            .then(result => {
-                if(result.data.acknowledged){
-                    alert("Cancel your booking successfully");
-                    window.location.reload();
-                }
-            })
+        if(status === "Confirm"){
+            alert("You can't delete this order because your order status is Confirm, For further info contact with US");
+        }
+        else{
+            const proceed = window.confirm("Are you sure you want to delete?")
+            if(proceed){
+                axios.delete(`http://localhost:5000/orders/${id}`)
+                .then(result => {
+                    if(result.data.acknowledged){
+                        alert("Cancel your booking successfully");
+                        window.location.reload();
+                    }
+                })
+        }
         }
     }
 

@@ -49,7 +49,7 @@ const Nav = () => {
                 <img src="https://i.ibb.co/dcYLBfD/logo1.jpg" alt="" width="80" height="44"/>
                     <h4 className="text-secondary ps-3">Travelling is Fun</h4>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"><i class="fas fa-chevron-circle-down"></i></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 ps-5 mb-lg-0 d-flex align-items-center">
@@ -66,9 +66,12 @@ const Nav = () => {
                         </li>
 
                         <li className="nav-item ms-5">
-                            <Link style={{ color: '#808080' }} to="/addTour" className="nav-link active fw-bold" aria-current="page" href="#">Add a Tour</Link>
+                            <Link style={{ color: '#808080' }} to="/addTour" className="nav-link active fw-bold" aria-current="page" href="#">Add a New Tour</Link>
                         </li>
-                        
+
+                        <li className="nav-item ms-5">
+                            <Link style={{ color: '#808080' }} to="/login" className="nav-link active fw-bold" aria-current="page" href="#">Login</Link>
+                        </li>
                     </ul>
 
                     {

@@ -9,8 +9,8 @@ const Login = () => {
 
     let history = useHistory();
     let location = useLocation();
-    const { user, logOut } = useAuth();
-    const { signInUsingGoogle, setIsLoading } = useAuth();
+    const { signInUsingGoogle, setIsLoading,  user, logOut } = useAuth();
+    console.log(user.email)
     const redirect_uri = location.state?.from || '/home';
 
     const handleGoogleLogin = () => {
@@ -21,11 +21,18 @@ const Login = () => {
         .finally(() => setIsLoading(false));
     }
 
+    
+
     return (
         
         <div className="mt-5 mb-5">
             <div className="google-login-container container bg-light d-flex align-items-center justify-content-center">
-            <button className="google-login-button"onClick={handleGoogleLogin}><i class="fab fa-google fa-lg"></i> Google sign in</button>
+            {
+                user.email ? 
+                <button className="google-login-button"onClick={logOut}><i class="fas fa-sign-out-alt"></i> Sign Out </button> : <button className="google-login-button"onClick={handleGoogleLogin}><i class="fab fa-google fa-lg"></i> Google sign in</button>
+            }
+            
+            
         </div>
         </div>
     );

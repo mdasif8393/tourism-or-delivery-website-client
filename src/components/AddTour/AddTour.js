@@ -2,8 +2,10 @@ import React from 'react';
 import './AddTour.css'
 import { useForm } from "react-hook-form";
 import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
 const AddTour = () => {
+    const history = useHistory();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         axios.post('http://localhost:5000/tours',data)
@@ -11,6 +13,7 @@ const AddTour = () => {
             if(result.data.acknowledged){
                 alert("A tour is added successfully");
                 reset();
+                history.push('/')
             }
         })
     };
@@ -32,7 +35,7 @@ const AddTour = () => {
 
                 <input className="form-control text-center" placeholder="Tour Cost" {...register("cost", { required: true })} /> <br/>
 
-                <input className="form-control text-center" placeholder="Image" {...register("image", { required: true })} /> <br/>
+                <input className="form-control text-center" placeholder="Image URL" {...register("image", { required: true })} /> <br/>
 
                 <input className="w-100 btn btn-secondary" type="submit" />
             </form>

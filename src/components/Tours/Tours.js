@@ -10,11 +10,20 @@ const Tours = () => {
         .then(data => setTours(data))
     },[])
     return (
-        <div className="tours-container container mt-5">
+        <div>
+            {
+                tours.length === 0 && <div className="spinner-border text-primary mt-5 " role="status">
+                                            <div><span className="visually-hidden">Loading...</span></div>
+                                        </div>
+            }
+            <div className="tours-container container mt-5">
+            
             {
                 tours.map(tour => <Tour key={tours._id} tour={tour}></Tour>)
             }
         </div>
+        </div>
+        
     );
 };
 

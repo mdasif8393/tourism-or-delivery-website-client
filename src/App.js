@@ -34,9 +34,9 @@ function App() {
           <Home></Home>
         </Route>
 
-        <Route path="/addTour">
+        <PrivateRoute path="/addTour">
           <AddTour></AddTour>
-        </Route>
+        </PrivateRoute>
 
         <PrivateRoute path="/orderPlace/:id">
           <OrderPlace></OrderPlace>
