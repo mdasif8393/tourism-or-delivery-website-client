@@ -38,7 +38,7 @@ const Nav = () => {
                         <a  href="https://www.facebook.com" target="_blank"><i className="fab fa-facebook"></i></a>
                         <a className="ms-2" href="https://www.instagram.com" target="_blank"><i className="fab fa-instagram"></i></a>
                         <a className="ms-2" href="https://www.twitter.com" target="_blank"><i className="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com" target="_blank"><i className="fab fa-youtube"></i></a>
+                        <a className="ms-2" href="https://www.youtube.com" target="_blank"><i className="fab fa-youtube"></i></a>
                     </div>
                     
             </div>
