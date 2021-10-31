@@ -5,7 +5,7 @@ import './ManageAllOrders.css'
 const ManageAllOrders = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://frightening-demon-32818.herokuapp.com/orders')
         .then(res => res.json())
         .then(data => setUsers(data))
     },[])
@@ -13,7 +13,7 @@ const ManageAllOrders = () => {
     const deleteBooking = (id) => {
         const proceed = window.confirm('Are you sure you want to delete?');
         if(proceed){
-            axios.delete(`http://localhost:5000/orders/${id}`)
+            axios.delete(`https://frightening-demon-32818.herokuapp.com/orders/${id}`)
             .then(result => {
                 if(result.data.acknowledged){
                     alert("Order is deleted successfully");
@@ -26,18 +26,26 @@ const ManageAllOrders = () => {
     }
 
     const updateOrderStatus = (id) => {
-        const proceed = window.confirm('Are you sure you want to update order status?');
-        if(proceed) {
+        
+        
            const updatedUser = users.find(user => user._id === id)
-           updatedUser.status="Confirm";
-           axios.put(`http://localhost:5000/orders/${id}`, updatedUser)
-           .then(result => {
+           if(updatedUser.status === 'Confirm'){
+               alert("Order status is already Confirm");
+           }
+           else{
+               
+            const proceed = window.confirm('Are you sure you want to update order status?');
+            if(proceed) {
+                updatedUser.status="Confirm";
+                axios.put(`https://frightening-demon-32818.herokuapp.com/orders/${id}`, updatedUser)
+                .then(result => {
                 if(result.data.acknowledged){
                     alert("Order status is updated successfully");
                     window.location.reload();
                 }
            })
-        }
+            }
+           }
         
     }
 

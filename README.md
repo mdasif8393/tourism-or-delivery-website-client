@@ -11,15 +11,16 @@
 * Admin can also add a new tour plan which will show in Home page
 
 ###Tools
-*React
-*MongoDB
-*Express
-*Node
-*HTML
-*CSS
-*Bootstrap
-*Axios
-*React Hook Form
-*Dot Env
-*Firebase
+* React
+* MongoDB
+* Express
+* Node
+* HTML
+* CSS
+* Bootstrap
+* Axios
+* React Hook Form
+* Dot Env
+* Firebase
 
+## Heroku server link: https://frightening-demon-32818.herokuapp.com/

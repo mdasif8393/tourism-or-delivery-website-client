@@ -13,7 +13,7 @@ const MyOrder = (props) => {
         else{
             const proceed = window.confirm("Are you sure you want to delete?")
             if(proceed){
-                axios.delete(`http://localhost:5000/orders/${id}`)
+                axios.delete(`https://frightening-demon-32818.herokuapp.com/orders/${id}`)
                 .then(result => {
                     if(result.data.acknowledged){
                         alert("Cancel your booking successfully");

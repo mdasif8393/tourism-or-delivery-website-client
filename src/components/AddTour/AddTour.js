@@ -8,7 +8,7 @@ const AddTour = () => {
     const history = useHistory();
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('http://localhost:5000/tours',data)
+        axios.post('https://frightening-demon-32818.herokuapp.com/tours',data)
         .then(result => {
             if(result.data.acknowledged){
                 alert("A tour is added successfully");

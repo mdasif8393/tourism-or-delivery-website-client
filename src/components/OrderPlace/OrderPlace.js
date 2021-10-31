@@ -15,7 +15,7 @@ const OrderPlace = () => {
     const history = useHistory();
         
     useEffect(()=> {
-        axios.get(`http://localhost:5000/tours/${id}`)
+        axios.get(`https://frightening-demon-32818.herokuapp.com/tours/${id}`)
         .then(result => {
         setTour(result.data);
     })
@@ -30,7 +30,7 @@ const OrderPlace = () => {
         data.image = tour.image;
         data.status = 'pending';
         
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://frightening-demon-32818.herokuapp.com/orders', data)
         .then(result => {
             if(result.data.acknowledged){
                 alert("Confirm Order Successfully");

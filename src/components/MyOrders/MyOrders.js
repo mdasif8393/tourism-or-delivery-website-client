@@ -12,7 +12,7 @@ const MyOrders = () => {
     const [orders, setOrders] = useState([]);
     console.log(orders)
     useEffect(()=>{
-        axios.get(`http://localhost:5000/orders/${email}`)
+        axios.get(`https://frightening-demon-32818.herokuapp.com/orders/${email}`)
         .then(result => {
         setOrders(result.data)
     })
