@@ -70,8 +70,8 @@ const ManageAllOrders = () => {
                     <td>{user.name}</td>
                     <td>{user.number}</td>
                     <td>{user.status}</td>
-                    <td><button className="btn btn-success" onClick={()=>updateOrderStatus(user._id)}><i class="fas fa-edit"></i> Update Status</button>&nbsp;
-                    <button onClick={()=>deleteBooking(user._id)} className="btn btn-danger"><i class="fas fa-times fa-lg"></i> Delete Booking</button></td>
+                    <td><button className="btn btn-success" onClick={()=>updateOrderStatus(user._id)}><i className="fas fa-edit"></i> Update Status</button>&nbsp;
+                    <button onClick={()=>deleteBooking(user._id)} className="btn btn-danger"><i className="fas fa-times fa-lg"></i> Delete Booking</button></td>
     
                     </tr>
                 

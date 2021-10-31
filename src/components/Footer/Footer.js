@@ -7,8 +7,8 @@ const Footer = () => {
             <div className="about-us text-center footer-texts">
                 <h4 className="text-white pb-3">CONTACT US</h4>
                 <p className="text-white"><i className="fas fa-map-marker-alt fa-lg"> </i> Bashundhara, Dhaka Bangladesh </p>
-                <p className="text-white"><i class="fas fa-phone fa-lg"></i> +88-01721212121</p>
-                <p className="text-white"><i class="far fa-envelope fa-lg"></i> ghuri-firi@gmail.com</p>
+                <p className="text-white"><i className="fas fa-phone fa-lg"></i> +88-01721212121</p>
+                <p className="text-white"><i className="far fa-envelope fa-lg"></i> ghuri-firi@gmail.com</p>
             </div>
 
             <div className="about-us text-center footer-texts">

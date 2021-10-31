@@ -29,7 +29,7 @@ const Login = () => {
             <div className="google-login-container container bg-light d-flex align-items-center justify-content-center">
             {
                 user.email ? 
-                <button className="google-login-button"onClick={logOut}><i class="fas fa-sign-out-alt"></i> Sign Out </button> : <button className="google-login-button"onClick={handleGoogleLogin}><i class="fab fa-google fa-lg"></i> Google sign in</button>
+                <button className="google-login-button"onClick={logOut}><i className="fas fa-sign-out-alt"></i> Sign Out </button> : <button className="google-login-button"onClick={handleGoogleLogin}><i className="fab fa-google fa-lg"></i> Google sign in</button>
             }
             
             

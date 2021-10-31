@@ -35,10 +35,10 @@ const Nav = () => {
                     </div>
                     
                     <div className="col">
-                        <a  href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a className="ms-2" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a className="ms-2" href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a  href="https://www.facebook.com" target="_blank"><i className="fab fa-facebook"></i></a>
+                        <a className="ms-2" href="https://www.instagram.com" target="_blank"><i className="fab fa-instagram"></i></a>
+                        <a className="ms-2" href="https://www.twitter.com" target="_blank"><i className="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com" target="_blank"><i className="fab fa-youtube"></i></a>
                     </div>
                     
             </div>
@@ -49,7 +49,7 @@ const Nav = () => {
                 <img src="https://i.ibb.co/dcYLBfD/logo1.jpg" alt="" width="80" height="44"/>
                     <h4 className="text-secondary ps-3">Travelling is Fun</h4>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"><i class="fas fa-chevron-circle-down"></i></span>
+                    <span className="navbar-toggler-icon"><i className="fas fa-chevron-circle-down"></i></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 ps-5 mb-lg-0 d-flex align-items-center">
@@ -75,13 +75,13 @@ const Nav = () => {
                     </ul>
 
                     {
-                        user.email &&  <h6><i class="fas fa-user fa-lg"></i> {user.displayName }&nbsp;</h6>
+                        user.email &&  <h6><i className="fas fa-user fa-lg"></i> {user.displayName }&nbsp;</h6>
                     }
                     
                     {
                         user.email ? 
-                        <button className="btn btn-outline-danger" type="submit" onClick={logOut}><i class="fas fa-sign-out-alt"></i> Sign Out</button> : 
-                        <button onClick={handleGoogleLogin} className="btn btn-outline-success" type="submit"><i class="fas fa-sign-in-alt "></i> Sign In</button>
+                        <button className="btn btn-outline-danger" type="submit" onClick={logOut}><i className="fas fa-sign-out-alt"></i> Sign Out</button> : 
+                        <button onClick={handleGoogleLogin} className="btn btn-outline-success" type="submit"><i className="fas fa-sign-in-alt "></i> Sign In</button>
 
                     }
                         

@@ -34,7 +34,7 @@ const MyOrder = (props) => {
                     <h5 className="text-secondary">{place}</h5>
                     <h6>Tour Date: {date}</h6>
                     <p>Order Status: {status}</p>
-                    <button className="btn btn-outline-danger" type="submit" onClick={ ()=>handleDeleteUser(_id)} ><i class="fas fa-times fa-lg"></i> Cancel Booking</button>
+                    <button className="btn btn-outline-danger" type="submit" onClick={ ()=>handleDeleteUser(_id)} ><i className="fas fa-times fa-lg"></i> Cancel Booking</button>
                 </div>
             </div>
         </div>

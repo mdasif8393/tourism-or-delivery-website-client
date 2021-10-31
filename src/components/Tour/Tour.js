@@ -15,8 +15,8 @@ const Tour = (props) => {
                         <small ><i className="fas fa-map-marker-alt fa-lg"></i> {location}</small>
                     </div>
                     <small className="text-primary">Starts from</small> <br/>
-                    <p className="fw-bold text-secondary"><i class="fas fa-dollar-sign"> </i> BDT {cost} /<small>person</small></p>
-                    <Link to={`/orderPlace/${_id}`}><button className="btn btn-outline-primary"><i class="fas fa-shopping-cart "></i> Book Now</button></Link>
+                    <p className="fw-bold text-secondary"><i className="fas fa-dollar-sign"> </i> BDT {cost} /<small>person</small></p>
+                    <Link to={`/orderPlace/${_id}`}><button className="btn btn-outline-primary"><i className="fas fa-shopping-cart "></i> Book Now</button></Link>
 
                     
                 </div>

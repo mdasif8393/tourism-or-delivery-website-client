@@ -47,7 +47,7 @@ const OrderPlace = () => {
                 <h6 className="mt-5"><i className="fas fa-map-marker-alt fa-lg"></i> {tour.location}</h6>
                 <p>{tour.description}</p>
                 <h6 className="mt-5"><i className="far fa-calendar-check fa-lg"></i> {tour.duration} days</h6>
-                <h6><i class="fas fa-dollar-sign fa-lg"> </i> {tour.cost} taka all included</h6>
+                <h6><i className="fas fa-dollar-sign fa-lg"> </i> {tour.cost} taka all included</h6>
             </div>
 
             <div>
