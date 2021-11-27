@@ -8,12 +8,12 @@ const Subscribe = () => {
     return (
         <div className="hero-image container-fluid d-flex justify-content-center align-items-center">
             <div>
-            <h2 className="text-center text-white">SUBSCRIBE OUR NEWSLETTER</h2>
-            <h4 className="text-center text-white mt-4">SUBSCRIBE TO RECEIVE OUR INTERESTING OFFERS</h4>
-            <input placeholder="Enter your email address" className="form-control email-subscribe d-inline w-75"type="text"></input>
-            <button  className="subscribe-button" onClick={handleSubscribe}>Subscribe</button>
+                <h2 className="text-center text-white">SUBSCRIBE OUR NEWSLETTER</h2>
+                <h4 className="text-center text-white mt-4">SUBSCRIBE TO RECEIVE OUR INTERESTING OFFERS</h4>
+                <input placeholder="Enter your email address" className="form-control email-subscribe d-inline w-75" type="text"></input>
+                <button className="subscribe-button" onClick={handleSubscribe}>Subscribe</button>
             </div>
-            
+
         </div>
     );
 };

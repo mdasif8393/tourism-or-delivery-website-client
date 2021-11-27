@@ -44,7 +44,7 @@ const Nav = () => {
             </div>
 
             <div>
-            <nav className="navbar navbar-expand-lg  bg-light fixed-top">
+            <nav className="navbar navbar-expand-lg  bg-light">
                 <div className="container-fluid ps-5">
                 <img src="https://i.ibb.co/dcYLBfD/logo1.jpg" alt="" width="80" height="44"/>
                     <h4 className="text-secondary ps-3">Travelling is Fun</h4>
